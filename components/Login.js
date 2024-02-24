@@ -14,7 +14,7 @@ const Login = () => {
     adminLogin(email, password)
       .then((res) => {
         console.log(res);
-        localStorage.setItem("token", res.accessToken);
+        localStorage.setItem("token", res.user.token);
         toast.current.show({
           severity: "success",
           summary: "Successful",
