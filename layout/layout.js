@@ -140,6 +140,7 @@ const Layout = (props) => {
     });
 
     const [user,setUser] = useState("")
+    
 
     useEffect(() => {
         const token = localStorage.getItem("token");
@@ -149,7 +150,7 @@ const Layout = (props) => {
     return (
         <React.Fragment>
             <Head>
-                <title>Medicine | Ecommerce </title>
+                <title>Kuik Dose</title>
                 <meta charSet="UTF-8" />
                 <meta name="description" content="The ultimate collection of design-agnostic, flexible and accessible React UI Components." />
                 <meta name="robots" content="index, follow" />

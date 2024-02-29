@@ -33,12 +33,15 @@ const Add = () => {
   const handleDropdownChange = (e, field) => {
     setFormData({ ...formData, [field]: e.value });
   };
-  console.log(formData);
+  
 
   const handleInputChange = (e) => {
     let { name, value } = e.target;
-    if (name === "status" || name === "discount") {
-      value = e.value; // Use e.value if it's a dropdown change
+    if (name === "status") {
+      value = value.name;
+    }
+    if (name === "discount") {
+      value = value.name
     }
     setFormData({ ...formData, [name]: value });
   };
@@ -48,11 +51,12 @@ const Add = () => {
   };
 
   const handleSave = () => {
+    console.log(formData.amount);
     if (!formData.name || !formData.amount || !formData.discount) {
       toast.current.show({
         severity: "error",
         summary: "error",
-        detail: "Please fill in all required fields.", // Custom error message
+        detail: "Please fill in all required fields.",
         life: 3000,
       });
     } else {

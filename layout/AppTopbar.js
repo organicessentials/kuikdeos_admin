@@ -45,7 +45,7 @@ const AppTopbar = forwardRef((props, ref) => {
           widt={"true"}
           alt="logo"
         />
-        <span>Medicine</span>
+        <span>KuikDose</span>
       </Link>
 
       {/*<button ref={menubuttonRef} type="button" className="p-link layout-menu-button layout-topbar-button" onClick={onMenuToggle}>*/}
