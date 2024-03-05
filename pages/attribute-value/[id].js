@@ -201,7 +201,7 @@ const List = () => {
           stripedRows
           value={records}
           paginator
-          rows={10}
+          rows={30}
           tableStyle={{ minWidth: "20rem" }}
         >
           {/*<DataTable value={products} tableStyle={{ minWidth: '50rem' }}>*/}
