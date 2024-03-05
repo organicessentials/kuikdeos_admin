@@ -93,7 +93,7 @@ const List =() => {
                         </Divider>
                     </div>
                     <div className="col-7">
-                        <DataTable stripedRows value={records} paginator rows={10} tableStyle={{ minWidth: '20rem' }}>
+                        <DataTable stripedRows value={records} paginator rows={30} tableStyle={{ minWidth: '20rem' }}>
                             {/*<DataTable value={products} tableStyle={{ minWidth: '50rem' }}>*/}
                             <Column field="name" header="Name"></Column>
                             <Column body={attributeValueTemplate} header="Attribute Values"></Column>
